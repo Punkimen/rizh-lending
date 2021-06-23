@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        @@include('components/_header-lending.html')
+        <main class="main">
+            <section class="forms">
+                <div class="container">
+                    <a href="#" class="steps-banner__link">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#arrow-link"></use>
+                            <span>Назад</span>
+                        </svg>
+                    </a>
+                    <div class="forms__content">
+                        <h1 class="forms__title">Ріж платіж</h1>
+                        <div class="forms__wrapper">
+                            <div class="form-step2__benner step2-benner">
+                                <div class="step2-benner__img">
+                                    <img src="img/creditbuy-banner.svg" alt="">
+                                </div>
+                                <div class="step2-benner__text">
+                                    <span>Бачу, що ви новий юзер. Раді вітати!</span>
+                                    Щоб продовжити розкажіть більше про себе:
+                                </div>
+                            </div>
+                            <form id="reg-form" action="#" name="reg-form" class="forms__form form-partner">
+                                <div class="form-partner__inp">
+                                    <label for="" class="form-partner__label">Тип партнера</label>
+                                    <select id="service-type" type="text" class="form-partner__input costum-input">
+                                        <option value="1">Сервіс</option>
+                                        <option value="2">Фінасова компанія</option>
+                                    </select>
+                                    <div class="select_arrow"></div>
+                                </div>
+                                <div class="form-partner__block form-partner__block--ur">
+                                    <div class="form-partner__wrapper">
+                                        <div class="form-partner__left">
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Тип компанії</label>
+                                                <select type="text" class="form-partner__input costum-input">
+                                                    <option value="1">ТОВ</option>
+                                                    <option value="2">ТОВ</option>
+                                                </select>
+                                                <div class="select_arrow"></div>
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Лого компанії</label>
+                                                <div class="file upload">
+                                                    <input type="file">
+                                                    <span class="select-file">Выберите файл</span>
+                                                    <span class="downloaded-file">Logo. svg</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Email</label>
+                                                <input type="email" name="email"
+                                                    class="form-partner__input costum-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-partner__right">
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">ЄДРПОУ</label>
+                                                <input type="text" name="asd" class="form-partner__input costum-input">
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Номер телефону</label>
+                                                <input type="tel" name="phone" class="form-partner__input costum-input">
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Web</label>
+                                                <input type="tel" name="web" class="form-partner__input costum-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-partner__block form-partner__block--fin">
+                                    <div class="form-partner__inp">
+                                        <label for="" class="form-partner__label">ЄДРПОУ</label>
+                                        <input type="text" name="edr2" class="form-partner__input costum-input">
+                                    </div>
+                                    <div class="form-partner__wrapper">
+                                        <div class="form-partner__left">
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Лого компанії</label>
+                                                <div class="file upload">
+                                                    <input type="file">
+                                                    <span class="select-file">Выберите файл</span>
+                                                    <span class="downloaded-file">Logo. svg</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Email</label>
+                                                <input type="email" name="email2"
+                                                    class="form-partner__input costum-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-partner__right">
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Номер телефону</label>
+                                                <input type="tel" name="phone" class="form-partner__input costum-input">
+                                            </div>
+                                            <div class="form-partner__inp">
+                                                <label for="" class="form-partner__label">Web</label>
+                                                <input type="tel" name="text" class="form-partner__input costum-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="form-partner__btn btn btn-yellow">Продовжити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('components/_footer.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

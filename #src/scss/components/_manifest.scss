@@ -68,14 +68,9 @@
         }
 
         &.active {
-            .manifest-questions__label {
-                font-size: 16px;
-                transition: all .2s;
-            }
 
             .manifest-questions__body {
                 display: block;
-                transition: all .2s;
             }
 
             .manifest-questions__switch {

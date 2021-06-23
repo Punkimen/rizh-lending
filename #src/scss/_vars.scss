@@ -394,6 +394,145 @@ li {
     }
 }
 
+select {
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 9px 15px;
+    display: block;
+    width: 100%;
+    border: 1px solid #EAECF0;
+    border-radius: 5px;
+    transition: all .2s;
+    outline: none;
+    appearance: none;
+    padding-right: 40px;
+    color: #000;
+
+    &.error {
+        border-color: #EB5757;
+    }
+
+    option {
+        color: #333;
+    }
+}
+
+label.error {
+    color: #EB5757;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border: solid #333;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.credit_arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border: solid #333;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.file {
+    background: #FFFFFF;
+    border: 2px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 3px;
+    min-height: 44px;
+
+    &.upload {
+        .select-file {
+            display: none;
+        }
+
+        .downloaded-file {
+            display: block;
+        }
+    }
+}
+
+.file input {
+    border: none;
+    background: #fff;
+    opacity: 0;
+    position: relative;
+    z-index: 9;
+    padding: 0;
+    top: 0;
+    margin: 0;
+    left: -20;
+    cursor: pointer;
+}
+
+.file input:hover {
+    border: none;
+}
+
+.select-file {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 20px;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+}
+
+.select-file:before {
+    content: url("../img/icon/upload.png");
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.downloaded-file {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.downloaded-file:before {
+    content: url("../img/icon/clip.svg");
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.downloaded-file::after {
+    content: '(183 mb)';
+    color: #a4a4a4;
+    position: absolute;
+    right: 40px;
+    top: 2px;
+    cursor: pointer;
+}
+
 // costum inputs end
 
 .svg-support {

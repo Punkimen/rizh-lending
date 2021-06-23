@@ -123,6 +123,7 @@ let form2Step = document.querySelector('#step2-form');
 let documentChoosen = $('.document-choosen')
 let formSetting = $('#form-setting')
 let formPersonal = $('#form-personal')
+let regForm = $('#reg-form')
 documentChoosen.on('change', function () {
     if ($(this).val() === 'passport') {
         $('.form-questionnaire__pasports').show()
@@ -434,6 +435,46 @@ if (formSetting) {
         }
     })
 }
+if (regForm) {
+    let serviceType = $('#service-type')
+    serviceType.on('click', function () {
+        if (serviceType.val() === '1') {
+            $('.form-partner__block--fin').hide()
+            $('.form-partner__block--ur').show()
+        } else if (serviceType.val() === '2') {
+            $('.form-partner__block--fin').show()
+            $('.form-partner__block--ur').hide()
+        }
+    })
+    regForm.validate({
+        rules: {
+            phone: {
+                required: true,
+                minlength: 7,
+            },
+            email: {
+                required: true,
+                email: true,
+            },
+            email2: {
+                required: true,
+                email: true,
+            },
+        },
+        messages: {
+            phone: {
+                required: '',
+                minlength: ''
+            },
+            email: {
+                required: 'Введіть дійсний e-mail'
+            },
+            email2: {
+                required: 'Введіть дійсний e-mail'
+            },
+        }
+    })
+}
 // forms end
 
 // step3
@@ -457,3 +498,24 @@ if (reviewForm) {
     })
 }
 // step3 end
+
+// problems blocks
+let manifestHead = $('.manifest-questions__header')
+manifestHead.on('click', function () {
+    $(this).parent().toggleClass('active')
+
+})
+// problems blocks end
+
+// shops
+let shopAsideItem = $('.shops-aside__item')
+let shopContentItem = $('.shops-content__block')
+
+shopAsideItem.on('click', function () {
+    let index = $(this).index()
+    $(this).addClass('current').siblings().removeClass('current')
+    shopContentItem.removeClass('active')
+    shopContentItem.eq(index).addClass('active')
+})
+
+// shops
