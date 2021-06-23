@@ -1,0 +1,136 @@
+.manifest {
+    background: #F4F4F4;
+    padding: 80px 0 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $md4) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    &__girl {
+        img {
+            display: block;
+            max-width: 444px;
+            min-width: 390px;
+            width: 100%;
+            height: auto;
+
+            @media(max-width: $md4) {
+                min-width: auto;
+            }
+        }
+    }
+
+    .container {
+        padding-bottom: 35px;
+        border-bottom: 4px solid #e0e0e0;
+    }
+}
+
+.manifest-labels {
+    margin-bottom: 85px;
+}
+
+.manifest-questions {
+    padding-left: 70px;
+    max-width: 538px;
+    width: 100%;
+
+    @media(max-width: $md3) {
+        padding-left: 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -.01em;
+        margin-bottom: 28px;
+    }
+
+    &__quest {
+        padding: 20px 20px 20px 50px;
+        background: #fff;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+
+        @media(max-width: $md3) {
+            padding: 20px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+
+        &.active {
+            .manifest-questions__label {
+                font-size: 16px;
+                transition: all .2s;
+            }
+
+            .manifest-questions__body {
+                display: block;
+                transition: all .2s;
+            }
+
+            .manifest-questions__switch {
+                span:last-child {
+                    transform: rotate(0);
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+
+    &__header {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-center;
+        justify-content: space-between;
+        color: #333333;
+    }
+
+    &__label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__body {
+        display: none;
+        padding: 12px 0 12px;
+        color: #535151;
+    }
+
+    &__switch {
+        top: 6px;
+        position: relative;
+        width: 15px;
+        height: 15px;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 15px;
+            height: 2px;
+            background: #333;
+            transition: all ease .2s;
+            border-radius: 1px;
+
+            &:last-child {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 1px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

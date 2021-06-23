@@ -1,0 +1,221 @@
+.header {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+    padding: 19px 0;
+
+    &__container {
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: $md4) {
+
+            .cum-logo {
+                max-width: 68px;
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+
+            .rizh-logo {
+                max-width: 96px;
+                width: 100%;
+                display: block;
+                height: auto;
+            }
+        }
+
+        &-add {
+            margin: 0 17px;
+
+            @media(max-width: $md4) {
+                max-width: 16px;
+                width: 100%;
+                display: block;
+                height: auto;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 15px;
+
+        @media(max-width: $md5) {
+            display: none;
+        }
+    }
+
+    &__list-elem {
+        position: relative;
+        font-size: 15px;
+        line-height: 18px;
+        transition: all .2s;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 28px;
+            height: 2px;
+            width: 0;
+            background: $colorYellow;
+            transition: all .2s;
+        }
+
+        &:hover {
+            font-weight: bold;
+
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 55px;
+
+            @media(max-width: $md4) {
+                margin-right: 15px;
+            }
+        }
+
+        &.current {
+            font-weight: bold;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: $md5) {
+            display: none;
+        }
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.header {
+
+    &__burger {
+        display: none;
+
+        @media(max-width: $md5) {
+            display: block;
+        }
+    }
+}
+
+.burger__icon {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0px;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 5;
+
+    span {
+        position: absolute;
+        transition: all .3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #000;
+        display: block;
+
+        &:first-child {
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            left: auto;
+            right: 0;
+        }
+
+        &:last-child {
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    &.active {
+        span {
+            transform: scale(0);
+
+            &:first-child {
+                transform: rotate(-45deg);
+                top: calc(50% - 1px);
+            }
+
+            &:last-child {
+                transform: rotate(45deg);
+                bottom: calc(50% - 1px);
+            }
+        }
+    }
+}
+
+.header-mobile {
+    display: none;
+    border-top: 1px solid #3C3C3C;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    height: calc(100vh - 50px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 40px;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__elem {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__footer {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 100%;
+        color: #ACACAC;
+    }
+}
