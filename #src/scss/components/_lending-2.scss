@@ -1,0 +1,224 @@
+.steps-item {
+    &__block {
+        position: relative;
+        border-radius: 10px;
+        // overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.step-hours {
+    overflow: visible;
+    position: relative;
+    padding: 75px 15px 75px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #FFCF5C;
+        width: 203px;
+        height: 203px;
+        border-radius: 50%;
+        color: #333333;
+    }
+
+    &__num {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 74px;
+
+        letter-spacing: -0.01em;
+    }
+
+    &__label {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.01em;
+    }
+
+    &__friendly {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 188px;
+        right: -35px;
+        bottom: -35px;
+        height: 188px;
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        box-shadow: 0px 22px 33px rgba(184, 184, 184, 0.25);
+        border-radius: 10px;
+
+        @media(max-width: $md5) {
+            width: 130px;
+            height: 130px;
+            right: 0;
+            bottom: -50px;
+        }
+
+        img {
+            display: block;
+            max-width: 120px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.differences {
+    padding: 80px 0;
+
+    @media(max-width: $md4) {
+        padding: 40px 0;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+
+        @media(max-width: $md4) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: $md4) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__left {
+        margin-right: 30px;
+
+        @media(max-width: $md4) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.differences-item {
+    max-width: 445px;
+    width: 100%;
+    border: 3px solid #F1F1F1;
+    border-radius: 10px;
+    height: 100%;
+
+    &__header {
+        background: #F1F1F1;
+        padding: 30px 45px;
+        color: #535151;
+
+        @media(max-width: $md3) {
+            padding: 30px 15px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.01em;
+
+        @media(max-width: $md5) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        @media(max-width: $md6) {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    &__body {
+        padding: 20px 45px;
+        background: transparent;
+
+        @media(max-width: $md3) {
+            padding: 20px 15px;
+        }
+
+        &--p25 {
+            padding: 20px 25px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 40px;
+    }
+}
+
+.differences-item--best {
+    border: 3px solid #F3C051;
+
+    .differences-item__header {
+        background: #F3C051;
+        color: #fff;
+    }
+}
+
+.differences-elem {
+    display: flex;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &__icon {
+        margin-right: 20px;
+    }
+
+    &__content {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+}
+
+.differences-like {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    &__icon {
+        margin-right: 20px;
+    }
+
+    &__text {
+        max-width: 293px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 100%;
+        color: #535151;
+    }
+}
+
+.orange-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}

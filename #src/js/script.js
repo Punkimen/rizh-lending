@@ -65,7 +65,20 @@ if (enterItem) {
 }
 
 // range-input end
+// product 
+let dataType = $('.step-product').data('type')
+$('.product-body__label').data('type', dataType)
+$('.product-showMore').data('type', dataType)
+if ($('.product-body__label')) {
+    if ($('.product-body__label').data('type') === 'full-buy') {
+        $('.product-body__label').text(`Всю суму пізніше
+        (до 45 днів)`)
+    } else if ($('.product-body__label').data('type') === 'credit-buy') {
+        $('.product-body__label').text(`Частинами: 4 платежі`)
+    }
+}
 
+// product end
 // show more
 
 let showMore = $('.buy-choose__showMore')
@@ -167,6 +180,7 @@ if (form2Step) {
             $('#step2-form').submit();
         }
     })
+
     const steps = {
         nextStep() {
             if (count != 3) {
@@ -519,3 +533,9 @@ shopAsideItem.on('click', function () {
 })
 
 // shops
+
+// aos
+AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
+});

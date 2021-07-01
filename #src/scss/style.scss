@@ -1,5 +1,6 @@
 @import './mixin';
 @import './fonts';
+@import './vendor/aos';
 @import '_vars';
 @import './components/header';
 @import './components/info';
@@ -11,3 +12,6 @@
 @import './components/step_2';
 @import './components/forms';
 @import './components/footer';
+@import './components/lending-2';
+@import './components/lending-3';
+@import './components/conditions';
