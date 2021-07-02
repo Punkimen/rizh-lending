@@ -466,15 +466,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: all .8s;
 
         &.active {
             .steps-item__num {
                 color: #ffd570;
                 border-color: #ffd570;
+                transition: all .8s;
             }
 
             .steps-item__span {
                 color: #ffd570;
+                transition: all .8s;
+            }
+
+            .steps-item__line {
+                background: #ffd570;
+                transition: all .8s;
             }
         }
     }

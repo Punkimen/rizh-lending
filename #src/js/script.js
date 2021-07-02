@@ -539,3 +539,35 @@ AOS.init({
     easing: 'ease-out-back',
     duration: 1000
 });
+
+const stepItems = document.querySelectorAll('.steps-item__step')
+
+function scrollAddActive() {
+    stepItems.forEach(el => {
+        const stepItem = el
+        const stepItemHeight = stepItem.offsetHeight
+        const stepItemOffset = offset(stepItem).top
+        const count = 1
+
+        let stepItemPoint = window.innerHeight - stepItemHeight / count
+        if (stepItemHeight > window.innerHeight) {
+            stepItemPoint = window.innerHeight - window.innerHeight / count
+        }
+
+        if ((pageYOffset > stepItemOffset - stepItemPoint) && pageYOffset < (stepItemOffset + stepItemHeight)) {
+            stepItem.classList.add('active')
+        } else {
+            stepItem.classList.remove('active')
+        }
+    })
+    function offset(el) {
+        const rect = el.getBoundingClientRect();
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
+}
+scrollAddActive()
+window.addEventListener('scroll', scrollAddActive)
+// window.addEventListener('scroll', scrollAddActive);
