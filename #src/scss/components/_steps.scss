@@ -426,6 +426,11 @@
 }
 
 .steps-item {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &:not(:last-child) {
         margin-bottom: 194px;
 
@@ -693,20 +698,24 @@
 
 .steps-item__arrow--1 {
     top: -25px;
-    right: 135px;
+    left: 0px;
 
     .step-arrow__icon {
         right: -80px;
         top: 23px;
+
+        @media(max-width: $md6) {
+            transform: rotate(30deg);
+        }
     }
 }
 
 .steps-item__arrow--2 {
     bottom: -40px;
-    right: -75px;
+    right: 0px;
 
     @media(max-width: $md3) {
-        right: 0;
+        right: 50px;
     }
 
     .step-arrow__icon {
@@ -943,3 +952,4 @@
         max-width: 236px;
     }
 }
+

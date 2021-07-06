@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Фінансовим партнерам</title>
     @@include('components/_styles.html')
 
 </head>
 
 <body>
     <div class="site-container">
-        @@include('components/_header-lending.html')
+        @@include('components/_header-lending-2.html')
         <main class="main">
             <section class="info">
                 <div class="container">
@@ -36,22 +36,22 @@
                                 <nav class="info-navigation__nav">
                                     <ul class="info-navigation__list">
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#steps" class="info-navigation__link blue">
                                                 Як працює
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#shops" class="info-navigation__link blue">
                                                 Магазини де ми є
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#manifest" class="info-navigation__link blue">
                                                 Наш Маніфест
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#mission" class="info-navigation__link blue">
                                                 Відповіді на питання
                                             </a>
                                         </li>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="info__girl info-girl">
                             <div class="info-girl__question">
-                                <button class="info-girl__btn btn">
+                                <button class="info-girl__btn btn" scroll-href="#question-simbol">
                                     <img src="img/icon/support.svg" alt="">
                                 </button>
                                 <span class="info-girl__hover">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </section>
-            <section class="steps">
+            <section id="steps" class="steps">
                 <div class="container">
                     <div class="steps-labels section-labels">
                         <h2 class="steps-labels__title section-title">Як Ріж Платіж працює</h2>
@@ -207,7 +207,7 @@
                         </div>
                     </div>
             </section>
-            <section class="differences">
+            <section id="shops" class="differences">
                 <div class="container">
                     <h2 class="differences__title section-title">Наші відмінності від класичної схеми</h2>
                     <div class="differences__wrapper">
@@ -358,7 +358,7 @@
                     </div>
                 </div>
             </section>
-            <section class="conditions">
+            <section id="manifest" class="conditions">
                 <div class="container">
                     <div class="conditions__wrapper">
                         <div class="conditions__left">
@@ -422,7 +422,7 @@
                 </div>
             </section>
             @@include('components/_questions.html')
-            <section class="start">
+            <section id="mission" class="start">
                 <div class="container">
                     <div class="start__wrapper">
                         <div class="start__left">
@@ -448,7 +448,10 @@
                                 </div>
                             </div>
                             <div class="start-item">
-                                <a href="#" class="start-item__link">Ознакомиться з документацією</a>
+                                <div class="start-item__icon start-item__icon--doc">
+                                    <img src="img/icon/warning-icon.svg" alt="">
+                                </div>
+                                <a href="#" class="start-item__link">Технічна документація</a>
                             </div>
 
                         </div>
@@ -482,19 +485,19 @@
                                                 Terms & Conditions | Privacy Policy</div>
                                         </div>
                                     </div>
-                                    <div class="form-step2__item sms-code" data-step="2">
+                                    <div class="form-step2__item thanks-you " data-step="2">
                                         <div class="form-step2__body">
-                                            <div class="form-step2__input">
-                                                <label for="" class="form-step2__label">Введіть код з СМС #1</label>
-                                                <div class="sms-code__flex">
-                                                    <input type="text" name="sms-code"
-                                                        class="form-step2__inp costum-input">
-                                                    <button class="form-step2__bnt btn btn-yellow">ок</button>
-                                                </div>
+                                            <button type="button" class="thanks-you__close btn">
+                                                <svg class="">
+                                                    <use xlink:href="./img/icons/icons.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="thanks-you__icon">
+                                                <img src="img/icon/thanks.svg" alt="">
                                             </div>
-                                            <div class="sms-code__btns">
-                                                <button class="sms-code__btn btn">відправити ще раз</button>
-                                                <button class="sms-code__btn btn">не приходить СМС</button>
+                                            <div class="thanks-you__title">Дякуємо!</div>
+                                            <div class="thanks-you__text">Ми отримали Вашу заявку.</div>
+                                            <div class="thanks-you__info">Наш представник незабаром зв”яжеться з Вами!
                                             </div>
                                         </div>
                                     </div>

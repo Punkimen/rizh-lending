@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Продавцям</title>
     <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/12.0.0/nouislider.min.css"
     integrity="sha512-kSH0IqtUh1LRE0tlO8dWN7rbmdy5cqApopY6ABJ4U99HeKulW6iKG5KgrVfofEXQOYtdQGFjj2N/DUBnj3CNmQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="img/favicon/favicon-192_192.ico">
 <link rel="stylesheet" href="css/vendor.min.css">
 <link rel="stylesheet" href="css/style.min.css">
 
@@ -23,13 +25,13 @@
         </div>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__list-elem current">
+                <li class="header__list-elem ">
                     <a href="" class="header__link">Покупцям</a>
                 </li>
                 <li class="header__list-elem">
                     <a href="" class="header__link">Фінансовим партнерам</a>
                 </li>
-                <li class="header__list-elem">
+                <li class="header__list-elem current">
                     <a href="" class="header__link">Продавцям</a>
                 </li>
             </ul>
@@ -93,22 +95,22 @@
                                 <nav class="info-navigation__nav">
                                     <ul class="info-navigation__list">
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#steps" class="info-navigation__link blue">
                                                 Як працює
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#shops" class="info-navigation__link blue">
                                                 Магазини де ми є
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#manifest" class="info-navigation__link blue">
                                                 Наш Маніфест
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#mission" class="info-navigation__link blue">
                                                 Відповіді на питання
                                             </a>
                                         </li>
@@ -118,7 +120,7 @@
                         </div>
                         <div class="info__girl info-girl">
                             <div class="info-girl__question">
-                                <button class="info-girl__btn btn">
+                                <button class="info-girl__btn btn" scroll-href="#question-simbol">
                                     <img src="img/icon/support.svg" alt="">
                                 </button>
                                 <span class="info-girl__hover">
@@ -162,99 +164,102 @@
                     </div>
                 </div>
             </section>
-            <section class="steps">
+            <section id="steps" class="steps">
                 <div class="container">
                     <div class="steps-labels section-labels">
                         <h2 class="steps-labels__title section-title">Як Ріж Платіж працює</h2>
-                        <span class="steps-labels__for section-labels__for">для фінансового партнера</span>
+                        <span class="steps-labels__for section-labels__for">для магазинів</span>
                     </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step active">
-                                    <div class="steps-item__num">1</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">
-                                        Додайте кнопку у вашу картку товару
-                                        та кошик
-                                    </h3>
-                                    <div class="steps-item__text">
-                                        В нас є декілька опцій, запитайте менеджера про варіанти
+                    <div class="steps__vertical-slider">
+                        <div class="steps-item">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step active">
+                                        <div class="steps-item__num">1</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">
+                                            Додайте кнопку у вашу картку товару
+                                            та кошик
+                                        </h3>
+                                        <div class="steps-item__text">
+                                            В нас є декілька опцій, запитайте менеджера про варіанти
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block">
-                                <img src="img/lending-3/step-1.jpg" alt="">
-                                <div class="steps-item__arrow steps-item__arrow--7" data-aos="fade-down"
-                                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                    <div class="step-arrow__text">Щоб це досягнути, в нас є умови:</div>
-                                    <div class="step-arrow__icon">
-                                        <img src="img/icon/step-arrow-left.svg" alt="">
+                                <div class="steps-item__block">
+                                    <img src="img/lending-3/step-1.jpg" alt="">
+                                    <div class="steps-item__arrow steps-item__arrow--7" data-aos="fade-down"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="step-arrow__text">Щоб це досягнути, в нас є умови:</div>
+                                        <div class="step-arrow__icon">
+                                            <img src="img/icon/step-arrow-left.svg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step">
-                                    <div class="steps-item__num">2</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">Інтегруйте нашу ко-брендовану сторінку
-                                        на ваш домен </h3>
-                                    <div class="steps-item__text">
-                                        Просимо зробити спільну сторінку, щоби не уводити клієнта з вашого домену та щоб
-                                        в нього не було сумнівів щодо довіри
+                        <div class="steps-item">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step">
+                                        <div class="steps-item__num">2</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">Інтегруйте нашу ко-брендовану сторінку
+                                            на ваш домен </h3>
+                                        <div class="steps-item__text">
+                                            Просимо зробити спільну сторінку, щоби не уводити клієнта з вашого домену та
+                                            щоб
+                                            в нього не було сумнівів щодо довіри
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block">
-                                <img src="img/lending-3/step-2.jpg" alt="">
-                                <div class="steps-item__arrow steps-item__arrow--8" data-aos="fade-down"
-                                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                    <div class="step-arrow__text">Ко-брендінг в хедері:
-                                        два логотипи разом</div>
-                                    <div class="step-arrow__icon">
-                                        <img src="img/icon/step-arrow-left.svg" alt="">
+                                <div class="steps-item__block">
+                                    <img src="img/lending-3/step-2.jpg" alt="">
+                                    <div class="steps-item__arrow steps-item__arrow--8" data-aos="fade-down"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="step-arrow__text">Ко-брендінг в хедері:
+                                            два логотипи разом</div>
+                                        <div class="step-arrow__icon">
+                                            <img src="img/icon/step-arrow-left.svg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step">
-                                    <div class="steps-item__num">3</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">Очікує на підписану угоду для фінансування</h3>
-                                    <div class="steps-item__text">
-                                        <p>Після підписання угоди покупцем, фінансовий партнер зобов’язується
-                                            профінансувати протягом 48 годин</p>
+                        <div class="steps-item">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step">
+                                        <div class="steps-item__num">3</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">Очікує на підписану угоду для фінансування</h3>
+                                        <div class="steps-item__text">
+                                            <p>Після підписання угоди покупцем, фінансовий партнер зобов’язується
+                                                профінансувати протягом 48 годин</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block">
-                                <img src="img/lending-3/step-3.jpg" alt="">
-                                <div class="step-hours__friendly step-hours__friendly--step-2">
-                                    <img src="img/lending-3/friendly.svg" alt="">
-                                    <div class="friendly-label">Редірект до особистого кабінету магазину</div>
+                                <div class="steps-item__block">
+                                    <img src="img/lending-3/step-3.jpg" alt="">
+                                    <div class="step-hours__friendly step-hours__friendly--step-2">
+                                        <img src="img/lending-3/friendly.svg" alt="">
+                                        <div class="friendly-label">Редірект до особистого кабінету магазину</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
             </section>
-            <section class="differences">
+            <section id="shops" class="differences">
                 <div class="container">
                     <h2 class="differences__title section-title">Наші відмінності від класичної схеми</h2>
                     <div class="differences__wrapper">
@@ -384,7 +389,7 @@
                     </div>
                 </div>
             </section>
-            <section class="conditions">
+            <section id="manifest" class="conditions">
                 <div class="container">
                     <div class="conditions__wrapper">
                         <div class="conditions__left">
@@ -647,7 +652,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="questions-content__item item-question bg-border">
+                        <div id="question-simbol" class="questions-content__item item-question bg-border">
                             <div class="item-question__head">
                                 <div class="item-question__title">Хто така Ріжка та що вона символізує?</div>
                                 <button class="btn item-question__switch">
@@ -1811,7 +1816,7 @@
     </div>
     </div>
 </section>
-            <section class="start">
+            <section id="mission" class="start">
                 <div class="container">
                     <div class="start__wrapper">
                         <div class="start__left">
@@ -1837,7 +1842,10 @@
                                 </div>
                             </div>
                             <div class="start-item">
-                                <a href="#" class="start-item__link">Ознакомиться з документацією</a>
+                                <div class="start-item__icon start-item__icon--doc">
+                                    <img src="img/icon/warning-icon.svg" alt="">
+                                </div>
+                                <a href="#" class="start-item__link">Технічна документація</a>
                             </div>
 
                         </div>
@@ -1871,19 +1879,19 @@
                                                 Terms & Conditions | Privacy Policy</div>
                                         </div>
                                     </div>
-                                    <div class="form-step2__item sms-code" data-step="2">
+                                    <div class="form-step2__item thanks-you " data-step="2">
                                         <div class="form-step2__body">
-                                            <div class="form-step2__input">
-                                                <label for="" class="form-step2__label">Введіть код з СМС #1</label>
-                                                <div class="sms-code__flex">
-                                                    <input type="text" name="sms-code"
-                                                        class="form-step2__inp costum-input">
-                                                    <button class="form-step2__bnt btn btn-yellow">ок</button>
-                                                </div>
+                                            <button type="button" class="thanks-you__close btn">
+                                                <svg class="">
+                                                    <use xlink:href="./img/icons/icons.svg#close"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="thanks-you__icon">
+                                                <img src="img/icon/thanks.svg" alt="">
                                             </div>
-                                            <div class="sms-code__btns">
-                                                <button class="sms-code__btn btn">відправити ще раз</button>
-                                                <button class="sms-code__btn btn">не приходить СМС</button>
+                                            <div class="thanks-you__title">Дякуємо!</div>
+                                            <div class="thanks-you__text">Ми отримали Вашу заявку.</div>
+                                            <div class="thanks-you__info">Наш представник незабаром зв”яжеться з Вами!
                                             </div>
                                         </div>
                                     </div>
@@ -1947,6 +1955,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
     integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 <script src="js/vendor.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>

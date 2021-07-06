@@ -64,18 +64,6 @@
     }
 }
 
-.form-step2 {
-
-    &__benner {}
-}
-
-.step2-benner {
-
-    &__img {}
-
-    &__text {}
-}
-
 .form-partner {
 
     &__inp {
@@ -119,13 +107,50 @@
     }
 }
 
-.costum-input {}
+.thanks-you {
+    padding: 50px 0;
+    text-align: center;
+    color: #333333;
 
-.select {
+    .form-step2__body {
+        max-width: 367px;
+        width: 100%;
+    }
 
-    &_arrow {}
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        font-size: 16px;
+        color: #9D9D9D;
+    }
 }
 
-.btn {}
+.active {}
 
-.btn-yellow {}
+.btn {}

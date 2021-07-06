@@ -338,7 +338,11 @@ if (form2Step) {
         steps.nextStep()
         steps.renderStep()
     })
-
+    $('.thanks-you__close').on('click', function () {
+        // $('.thanks-you').removeClass('active')
+        steps.prevStep()
+        steps.renderStep()
+    })
 }
 if (formPersonal) {
     $('#form-personal').validate({
@@ -489,6 +493,7 @@ if (regForm) {
         }
     })
 }
+
 // forms end
 
 // step3
@@ -571,3 +576,81 @@ function scrollAddActive() {
 scrollAddActive()
 window.addEventListener('scroll', scrollAddActive)
 // window.addEventListener('scroll', scrollAddActive);
+
+$(".info-navigation__link").click(function (e) {
+    e.preventDefault()
+    let element = $(this).attr("scroll-href");
+
+    let dist = $(element).offset().top;
+
+    $("html, body").animate({
+        "scrollTop": dist,
+    }, 1000)
+    // $('.burger__icon').removeClass('active');
+    // $('.header-mobile__menu').removeClass('show')
+    return false;
+})
+$('.info-girl__btn').click(function (e) {
+    e.preventDefault()
+    let element = $(this).attr("scroll-href");
+
+    let dist = $(element).offset().top;
+    $("html, body").animate({
+        "scrollTop": dist,
+    }, 1000)
+    $(element).addClass('active')
+})
+
+//methods
+// $(window).scroll(function () {
+//     let scrollheight = $(this).scrollTop();
+//     let stepsDist = $('#steps').offset().top;
+//     let firstStep = $('.steps-item[data-step="1"]').offset().top;
+//     let secondStep = $('.steps-item[data-step="1"]').offset().top;
+//     let thridStep = $('.steps-item[data-step="1"]').offset().top;
+//     console.log(scrollheight);
+//     console.log(stepsDist);
+// });
+
+const steps = document.querySelectorAll('.steps-item')
+function fullPageScroll() {
+    steps.forEach(el => {
+        const stepItem = el
+        const stepItemHeight = stepItem.offsetHeight
+        const stepItemOffset = offset(stepItem).top
+        const count = 1
+
+        let stepItemPoint = window.innerHeight - stepItemHeight / count
+        if (stepItemHeight > window.innerHeight) {
+            stepItemPoint = window.innerHeight - window.innerHeight / count
+        }
+
+        if ((pageYOffset > stepItemOffset - stepItemPoint) && pageYOffset < (stepItemOffset + stepItemHeight)) {
+            stepItem.classList.add('active')
+        } else {
+            stepItem.classList.remove('active')
+        }
+
+    })
+    function offset(el) {
+        const rect = el.getBoundingClientRect();
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+    nextStepScroll()
+}
+function nextStepScroll() {
+    const steps = document.querySelectorAll('.steps-item')
+    steps.forEach(el => {
+        let index = 0
+        if (el.classList.contains('active')) {
+            index++
+            console.log(index);
+
+        }
+    })
+}
+fullPageScroll()
+nextStepScroll()
+window.addEventListener('scroll', fullPageScroll)

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Покупцям
+
+    </title>
     @@include('components/_styles.html')
 
 </head>
@@ -36,22 +38,22 @@
                                 <nav class="info-navigation__nav">
                                     <ul class="info-navigation__list">
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#steps" class="info-navigation__link blue">
                                                 Як працює
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#shops" class="info-navigation__link blue">
                                                 Магазини де ми є
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#manifest" class="info-navigation__link blue">
                                                 Наш Маніфест
                                             </a>
                                         </li>
                                         <li class="info-navigation__elem">
-                                            <a href="" class="info-navigation__link blue">
+                                            <a href="#" scroll-href="#mission" class="info-navigation__link blue">
                                                 Відповіді на питання
                                             </a>
                                         </li>
@@ -61,11 +63,12 @@
                         </div>
                         <div class="info__girl info-girl">
                             <div class="info-girl__question">
-                                <button class="info-girl__btn btn">
+                                <button class="info-girl__btn btn" scroll-href="#question-simbol">
                                     <img src="img/icon/support.svg" alt="">
                                 </button>
                                 <span class="info-girl__hover">
-                                    <a href="#" class="info-girl__link">Що символізує героїня?</a>
+                                    <a href="#" class="info-girl__link">Що символізує
+                                        героїня?</a>
                                 </span>
                             </div>
                             <img class="info-girl__img" src="img/girl.svg" alt="">
@@ -96,236 +99,244 @@
                     </div>
                 </div>
             </section>
-            <section class="steps">
+            <section id="steps" class="steps">
                 <div class="container">
                     <div class="steps-labels section-labels">
                         <h2 class="steps-labels__title section-title">Як Ріж Платіж працює</h2>
                         <span class="steps-labels__for section-labels__for">для покупця</span>
                     </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step">
-                                    <div class="steps-item__num">1</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">Шукай фірмову іконку та кнопку Ріж Платіж</h3>
-                                    <div class="steps-item__text">
-                                        Дивись <a class="blue underline" href="">список магазинів</a>, де ми вже
-                                        працюємо.
-                                        Невдозі ми
-                                        плануємо встановитись у всх магазинах України
+                    <div class="steps__vertical-slider ">
+                        <div class="steps-item" data-step="1">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step">
+                                        <div class="steps-item__num">1</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">Шукай фірмову іконку та кнопку Ріж Платіж</h3>
+                                        <div class="steps-item__text">
+                                            Дивись <a class="blue underline" href="">список магазинів</a>, де ми вже
+                                            працюємо.
+                                            Невдозі ми
+                                            плануємо встановитись у всх магазинах України
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block first-step">
-                                <button type="button" class="btn screen-btn">
-                                    <img src="img/screen-btn.svg" alt="">
-                                </button>
-                                <button type="button" class="btn footer-btn">
-                                    <img src="img/footer-btn.svg" alt="">
-                                </button>
-                                <img src="img/img.png" alt="">
-                                <div class="steps-item__arrow steps-item__arrow--1" data-aos="fade-down"
-                                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                    <div class="step-arrow__text">Ось така жовтенька</div>
-                                    <div class="step-arrow__icon">
-                                        <img src="img/icon/step-arrow.svg" alt="">
+                                <div class="steps-item__block first-step">
+                                    <img src="img/lending-3/step-1.jpg" alt="">
+                                    <div class="steps-item__arrow steps-item__arrow--1" data-aos="fade-down"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="step-arrow__text">Ось така жовтенька</div>
+                                        <div class="step-arrow__icon">
+                                            <img src="img/icon/step-arrow.svg" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="steps-item__arrow steps-item__arrow--2" data-aos="fade-down"
-                                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                    <div class="step-arrow__text">Така ось іконка</div>
-                                    <div class="step-arrow__icon">
-                                        <img src="img/icon/step-arrow.svg" alt="">
+                                    <div class="steps-item__arrow steps-item__arrow--2" data-aos="fade-down"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="step-arrow__text">Така ось іконка</div>
+                                        <div class="step-arrow__icon">
+                                            <img src="img/icon/step-arrow.svg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step">
-                                    <div class="steps-item__num">2</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">Обирай, як тобі зручно заплатити</h3>
-                                    <div class="steps-item__text">
-                                        Порівняй обидва методи
+                        <div class="steps-item" data-step="2">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step">
+                                        <div class="steps-item__num">2</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">Обирай, як тобі зручно заплатити</h3>
+                                        <div class="steps-item__text">
+                                            Порівняй обидва методи
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block second-step">
-                                <div class="step-content__item buy-choose">
-                                    <div class="buy-choose__head">
-                                        <div class="buy-choose__content">
-                                            <div class="buy-choose__title">Всю суму пізніше (до 45 днів)</div>
-                                            <div class="buy-choose__info">Перші 15 днів без переплати</div>
-                                            <button type="button" class="buy-choose__showMore btn">
-                                                <span>сховати деталі</span>
-                                                <svg class="">
-                                                    <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="buy-choose__img">
-                                            <img src="img/apple.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="buy-choose__body fullbuy-body">
-                                        <div class="fullbuy-body__title">Без преплати, якщо внести всю суму до 15 днів
-                                        </div>
-                                        <div class="fullbuy-body__table">
-                                            <div class="fullbuy-body__row">
-                                                <div class="fullbuy-body__label">Перші 15 днів</div>
-                                                <div class="fullbuy-body__line"></div>
-                                                <div class="fullbuy-body__info">
-                                                    <span>без переплати</span>
-                                                    <svg class="svg-support">
-                                                        <use xlink:href="./img/icons/icons.svg#support"></use>
+                                <div class="steps-item__block second-step">
+                                    <div class="step-content__item buy-choose">
+                                        <div class="buy-choose__head">
+                                            <div class="buy-choose__content">
+                                                <div class="buy-choose__title">Всю суму пізніше (до 45 днів)</div>
+                                                <div class="buy-choose__info">Перші 15 днів без переплати</div>
+                                                <button type="button" class="buy-choose__showMore btn">
+                                                    <span>сховати деталі</span>
+                                                    <svg class="">
+                                                        <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
                                                     </svg>
-                                                </div>
+                                                </button>
                                             </div>
-                                            <div class="fullbuy-body__row">
-                                                <div class="fullbuy-body__label">З 16 по 45 день</div>
-                                                <div class="fullbuy-body__line"></div>
-                                                <div class="fullbuy-body__info">1% в день</div>
-                                            </div>
-                                            <div class="fullbuy-body__row">
-                                                <div class="fullbuy-body__label">Сума процентів з 16 по 45 день</div>
-                                                <div class="fullbuy-body__line"></div>
-                                                <div class="fullbuy-body__info">3000 ₴</div>
+                                            <div class="buy-choose__img">
+                                                <img src="img/apple.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="fullbuy-body__footer">
-                                            <div class="fullbuy-body__summ">Сума, якщо сплатити до 31.05</div>
-                                            <div class="fullbuy-body__price">7 110,65 <span>₴</span></div>
-                                        </div>
-                                        <button type="button" class="fullbuy-body__btn btn btn-yellow">Обрати і
-                                            продовжити</button>
-                                    </div>
-                                </div>
-                                <div class="step-content__item buy-choose">
-                                    <div class="buy-choose__head">
-                                        <div class="buy-choose__content">
-                                            <div class="buy-choose__title">Частинами за (до 12 місяців)</div>
-                                            <div class="buy-choose__info">Рівні частини, найвигідніші умови</div>
-                                            <button type="button" class="buy-choose__showMore btn">
-                                                <span>показати деталі</span>
-                                                <svg class="">
-                                                    <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="buy-choose__img">
-                                            <img src="img/apple_2.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="buy-choose__body creditbuy-body">
-                                        <form action="#" class="creditbuy-body__form">
-                                            <div class="creditbuy-body__row">
-                                                <div class="range__up">
-                                                    <div class="creditbuy-body__label m0">Кількість платежів</div>
-                                                    <div class="info__inp">
-                                                        <input id="input-quantity" class="costum-input range__input"
-                                                            type="text" value="4">
-                                                    </div>
-                                                </div>
-                                                <div id="quantity-pay" class="costum-range__input">
-                                                </div>
+                                        <div class="buy-choose__body fullbuy-body">
+                                            <div class="fullbuy-body__title">Без преплати, якщо внести всю суму до 15
+                                                днів
                                             </div>
-                                            <div class="creditbuy-body__row">
-                                                <div class="range clearfix">
-                                                    <div class="range__up">
-                                                        <div class="creditbuy-body__label m0">Період виплати (днів)
-                                                        </div>
-                                                        <div class="info__inp">
-                                                            <input id="input-term" class="costum-input range__input"
-                                                                type="text" value="90">
-                                                        </div>
-                                                    </div>
-                                                    <div id="term-pay" class="costum-range__input">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="creditbuy-body__row">
-                                                <div class="creditbuy-body__label">Хочу зробити перший внесок</div>
-                                                <div class="creditbuy-body__checkbox">
-                                                    <label class="costum-checkbox">
-                                                        сьогодні
-                                                        <input value="" type="checkbox" name="1" />
-                                                        <div class="costum-checkbox__indicator"></div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="creditbuy-body__row">
-                                                <div class="creditbuy-body__label">Сума першого внеску</div>
-                                                <div class="creditbuy-body__input creditbuy-body__input--unit">
-                                                    <input class="creditbuy-body__firstpay costum-input" type="text"
-                                                        value="2000">
-                                                    <span class="unit-span">₴</span>
-                                                </div>
-                                            </div>
-                                            <div class="creditbuy-body__row">
-                                                <div class="creditbuy-body__label">9 платежів кожні 10 днів</div>
-                                                <div class="creditbuy-body__pay">
-                                                    <div class="creditbuy-body__summ">567 <span>₴</span></div>
-                                                    <a href="#" class="creditbuy-body__link">
-                                                        <span>+ % лендера</span>
+                                            <div class="fullbuy-body__table">
+                                                <div class="fullbuy-body__row">
+                                                    <div class="fullbuy-body__label">Перші 15 днів</div>
+                                                    <div class="fullbuy-body__line"></div>
+                                                    <div class="fullbuy-body__info">
+                                                        <span>без переплати</span>
                                                         <svg class="svg-support">
                                                             <use xlink:href="./img/icons/icons.svg#support"></use>
                                                         </svg>
-                                                    </a>
+                                                    </div>
+                                                </div>
+                                                <div class="fullbuy-body__row">
+                                                    <div class="fullbuy-body__label">З 16 по 45 день</div>
+                                                    <div class="fullbuy-body__line"></div>
+                                                    <div class="fullbuy-body__info">1% в день</div>
+                                                </div>
+                                                <div class="fullbuy-body__row">
+                                                    <div class="fullbuy-body__label">Сума процентів з 16 по 45 день
+                                                    </div>
+                                                    <div class="fullbuy-body__line"></div>
+                                                    <div class="fullbuy-body__info">3000 ₴</div>
                                                 </div>
                                             </div>
-                                            <div class="creditbuy-body__banner creditbuy-banner">
-                                                <div class="creditbuy-banner__img">
-                                                    <img src="img/creditbuy-banner.svg" alt="">
-                                                </div>
-                                                <div class="creditbuy-banner__info">
-                                                    <span>Персонаж прогнозує, що </span>
-                                                    на ці умови погодяться 29 з 30 банків
-                                                </div>
+                                            <div class="fullbuy-body__footer">
+                                                <div class="fullbuy-body__summ">Сума, якщо сплатити до 31.05</div>
+                                                <div class="fullbuy-body__price">7 110,65 <span>₴</span></div>
                                             </div>
                                             <button type="button" class="fullbuy-body__btn btn btn-yellow">Обрати і
                                                 продовжити</button>
-                                        </form>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="steps-item__arrow steps-item__arrow--3" data-aos="fade-down"
-                                    data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-                                    <div class="step-arrow__text">Така ось іконка</div>
-                                    <div class="step-arrow__icon">
-                                        <img src="img/icon/step-arrow.svg" alt="">
+                                    <div class="step-content__item buy-choose">
+                                        <div class="buy-choose__head">
+                                            <div class="buy-choose__content">
+                                                <div class="buy-choose__title">Частинами за (до 12 місяців)</div>
+                                                <div class="buy-choose__info">Рівні частини, найвигідніші умови</div>
+                                                <button type="button" class="buy-choose__showMore btn">
+                                                    <span>показати деталі</span>
+                                                    <svg class="">
+                                                        <use xlink:href="./img/icons/icons.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="buy-choose__img">
+                                                <img src="img/apple_2.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="buy-choose__body creditbuy-body">
+                                            <form action="#" class="creditbuy-body__form">
+                                                <div class="creditbuy-body__row">
+                                                    <div class="range__up">
+                                                        <div class="creditbuy-body__label m0">Кількість платежів</div>
+                                                        <div class="info__inp">
+                                                            <input id="input-quantity" class="costum-input range__input"
+                                                                type="text" value="4">
+                                                        </div>
+                                                    </div>
+                                                    <div id="quantity-pay" class="costum-range__input">
+                                                    </div>
+                                                </div>
+                                                <div class="creditbuy-body__row">
+                                                    <div class="range clearfix">
+                                                        <div class="range__up">
+                                                            <div class="creditbuy-body__label m0">Період виплати (днів)
+                                                            </div>
+                                                            <div class="info__inp">
+                                                                <input id="input-term" class="costum-input range__input"
+                                                                    type="text" value="90">
+                                                            </div>
+                                                        </div>
+                                                        <div id="term-pay" class="costum-range__input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="creditbuy-body__row">
+                                                    <div class="creditbuy-body__label">Хочу зробити перший внесок</div>
+                                                    <div class="creditbuy-body__checkbox">
+                                                        <label class="costum-checkbox">
+                                                            сьогодні
+                                                            <input value="" type="checkbox" name="1" />
+                                                            <div class="costum-checkbox__indicator"></div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="creditbuy-body__row">
+                                                    <div class="creditbuy-body__label">Сума першого внеску</div>
+                                                    <div class="creditbuy-body__input creditbuy-body__input--unit">
+                                                        <input class="creditbuy-body__firstpay costum-input" type="text"
+                                                            value="2000">
+                                                        <span class="unit-span">₴</span>
+                                                    </div>
+                                                </div>
+                                                <div class="creditbuy-body__row">
+                                                    <div class="creditbuy-body__label">9 платежів кожні 10 днів</div>
+                                                    <div class="creditbuy-body__pay">
+                                                        <div class="creditbuy-body__summ">567 <span>₴</span></div>
+                                                        <a href="#" class="creditbuy-body__link">
+                                                            <span>+ % лендера</span>
+                                                            <svg class="svg-support">
+                                                                <use xlink:href="./img/icons/icons.svg#support"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="creditbuy-body__banner creditbuy-banner">
+                                                    <div class="creditbuy-banner__img">
+                                                        <img src="img/creditbuy-banner.svg" alt="">
+                                                    </div>
+                                                    <div class="creditbuy-banner__info">
+                                                        <span>Персонаж прогнозує, що </span>
+                                                        на ці умови погодяться 29 з 30 банків
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="fullbuy-body__btn btn btn-yellow">Обрати і
+                                                    продовжити</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="steps-item__arrow steps-item__arrow--3" data-aos="fade-down"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                                        <div class="step-arrow__text">Така ось іконка</div>
+                                        <div class="step-arrow__icon">
+                                            <img src="img/icon/step-arrow.svg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="steps-item">
-                        <div class="steps-item__wrapper">
-                            <div class="steps-item__left">
-                                <div class="steps-item__step">
-                                    <div class="steps-item__num">3</div>
-                                    <span class="steps-item__span">КРОК</span>
-                                    <div class="steps-item__line"></div>
-                                </div>
-                                <div class="steps-item__content">
-                                    <h3 class="steps-item__title">Ухвалюй угоду та очікуй на товар</h3>
-                                    <div class="steps-item__text">
-                                        <p>Якщо будеш зареєстрован, усе оформлення займе онлайн до 1 хвилини</p>
-                                        <p>Усі покупки та графік виплат вам буде доступний в Особистому Кабінеті на
-                                            сайті
-                                            або в месенджерах</p>
+                        <div class="steps-item" data-step="3">
+                            <div class="steps-item__wrapper">
+                                <div class="steps-item__left">
+                                    <div class="steps-item__step">
+                                        <div class="steps-item__num">3</div>
+                                        <span class="steps-item__span">КРОК</span>
+                                        <div class="steps-item__line"></div>
+                                    </div>
+                                    <div class="steps-item__content">
+                                        <h3 class="steps-item__title">Ухвалюй угоду та очікуй на товар</h3>
+                                        <div class="steps-item__text">
+                                            <p>Якщо будеш зареєстрован, усе оформлення займе онлайн до 1 хвилини</p>
+                                            <p>Усі покупки та графік виплат вам буде доступний в Особистому Кабінеті на
+                                                сайті
+                                                або в месенджерах</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="steps-item__block third-step">
+                                <div class="steps-item__block">
+                                    <div class="steps-item__block">
+                                        <img src="img/lending-3/step-3.jpg" alt="">
+                                        <div class="step-hours__friendly step-hours__friendly--step-2">
+                                            <img src="img/block-girl.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="block-girl">
+
+                                    </div>
+                                </div>
+                                <!-- <div class="steps-item__block third-step">
                                 <div class="third-step__header">
                                     <div class="third-step__label">Крок 4. Товар їде до вас</div>
                                     <div class="third-step__title">Вітаємо! Ваш платіж розрізано,
@@ -342,12 +353,13 @@
                                 <div class="block-girl">
                                     <img src="img/block-girl.svg" alt="">
                                 </div>
+                            </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="shops">
+            <section id="shops" class="shops">
                 <div class="container">
                     <h2 class="shops__title section-title">Магазини, де вже парцює Ріж Платіж</h2>
                     <div class="shops__wrapper">
@@ -691,7 +703,7 @@
                     </div>
                 </div>
             </section>
-            <section class="manifest">
+            <section id="manifest" class="manifest">
                 <div class="border-container container">
                     <div class="manifest-labels section-labels">
                         <h2 class="manifest-labels__title section-title">Наш Маніфест</h2>
@@ -762,7 +774,7 @@
                     </div>
                 </div>
             </section>
-            <section class="mission">
+            <section id="mission" class="mission">
                 <div class="container">
                     <h2 class="mission__title section-title">Наша місія</h2>
                     <div class="mission__wrapper">
