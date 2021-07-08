@@ -2416,13 +2416,6 @@ label.error {
   margin-bottom: 90px;
 }
 
-.steps-item {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .steps-item:not(:last-child) {
   margin-bottom: 194px;
 }
